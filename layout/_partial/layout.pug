@@ -41,6 +41,12 @@ html(lang="zh-cn")
       });
       }
       });
+      // jQuery on select Header
+      $(document).ready(function() {
+        // get current URL path and assign 'active' class
+        var pathname = window.location.pathname;
+        $('#header-navbar > a[href="'+pathname+'"]').addClass('selected');
+      })
       if('#{theme.google_analytics}') {
         // Google Analytics
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

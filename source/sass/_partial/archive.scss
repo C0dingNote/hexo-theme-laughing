@@ -1,0 +1,21 @@
+.archive {
+  ul.post-archive {
+    h2.archive-month {
+      font-size: 1.2rem;
+      border-bottom: 1px solid #ecf0f1;
+    }
+    li.post-item {
+      a.post-title {
+        font-size: 1rem;
+        margin: 10px 0;
+        color: $color-midnightBlue;
+        @include link-hover;
+      }
+      font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+    }
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  margin-bottom: 80px;
+}

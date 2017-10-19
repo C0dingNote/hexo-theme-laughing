@@ -1,0 +1,20 @@
+extends ./_partial/layout.pug
+block content
+  include ./_partial/header.pug
+  include ./_partial/page_header.pug
+  ul.post-list(style='max-width:'+ theme.content_width +'px')
+    .archive
+        ul.post-archive
+            - var currentMonth = 0;
+            - var change = false;
+            - page.posts.each(function (post) {
+                - var postMonth = date(post.date, 'YYYY-MM');
+                - change = currentMonth !== postMonth;
+                - month = change ? postMonth : currentMonth;
+                if change 
+                    h2.archive-month!= month
+                    - currentMonth = postMonth;
+                li.post-item
+                    a(class="post-title" href=url_for(post.path)) #{post.title}
+            - })
+  include ./_partial/pagination.pug

@@ -35,6 +35,14 @@
       color: #5383d3;
     }
   }
+  div.header-logo {
+    background-image: url("../codingnote_logo_cbg.png");
+    height: 110px;
+    width: 145px;
+    float: left;
+    background-size: cover;
+    margin-top: -50px;
+  }
   a {
     color: #ffffff;
     text-decoration: none;
@@ -80,9 +88,13 @@ body {
       display: block;
     }
     .header-fixed .header-limiter {
-      h1 {
-        font-size: 24px;
-        line-height: 30px;
+      div.header-logo {
+        background-image: url(../codingnote_horizontal.png);
+        height: 30px;
+        width: 188px;
+        float: left;
+        background-size: cover;
+        margin-top: 0px
       }
       nav {
         line-height: 28px;
