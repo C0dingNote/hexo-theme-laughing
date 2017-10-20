@@ -18,7 +18,7 @@ block content
         ul.meta
           li
             i.icon.icon-author
-            | #{config.author}
+            | #{post.creative_commons && post.creative_commons.enable ? post.creative_commons.author : config.author}
           li
             i.icon.icon-clock
             | #{parseInt(post.content ? post.content.length/900 : 0)} Minutes
