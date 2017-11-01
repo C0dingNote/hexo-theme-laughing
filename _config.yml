@@ -13,6 +13,7 @@ disqus:
 google_analytics: UA-98330531-1
 # Header
 page_background: http://codingnote.com/page_background.png
+archive_background: http://codingnote.com/page_background.png
 page_menu_button: dark
 post_background: /default_images/post_background.jpg
 post_menu_button: light

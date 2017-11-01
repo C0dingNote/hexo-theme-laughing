@@ -1,7 +1,9 @@
 extends ./_partial/layout.pug
 block content
   include ./_partial/header.pug
-  include ./_partial/page_header.pug
+  .page-header
+    .background
+      img(src=theme.archive_background)
   ul.post-list(style='max-width:'+ theme.content_width +'px')
     .archive
         ul.post-archive
